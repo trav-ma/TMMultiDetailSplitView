@@ -12,9 +12,12 @@ class Detail1ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //draw the menu button in portrait mode
+        if let splitView = self.navigationController?.splitViewController, !splitView.isCollapsed {
+            self.navigationItem.leftBarButtonItem = splitView.displayModeButtonItem
+        }
         print("view 2 loaded")
     }
-
-
+    
 }
 
