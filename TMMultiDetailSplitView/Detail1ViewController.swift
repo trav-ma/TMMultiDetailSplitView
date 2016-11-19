@@ -16,7 +16,7 @@ class Detail1ViewController: UIViewController {
         if let splitView = self.navigationController?.splitViewController, !splitView.isCollapsed {
             self.navigationItem.leftBarButtonItem = splitView.displayModeButtonItem
         }
-        print("view 2 loaded")
+        print("view 1 loaded")
     }
     
 }
